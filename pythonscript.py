@@ -51,7 +51,7 @@ def connect_and_execute():
             print("Successfully connected to the database")
             
             # Path to your SQL script
-            sql_file_path = 'C:\\Users\\Lenovo\\Desktop\\data_automation\\Python-DB\\schema_changes_git.sql'
+            sql_file_path = 'schema_changes_git.sql'
             
             # Execute the SQL script
             execute_sql_script(sql_file_path, connection)

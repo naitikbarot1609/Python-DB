@@ -30,9 +30,9 @@ jobs:
       # Execute the SQL script using a Python script
       - name: Execute SQL Scripts
         env:
-          DB_HOST: ${{ secrets.naitik.mysql.database.azure.com }}
-          DB_USER: ${{ secrets.rootdb }}
-          DB_PASSWORD: ${{ secrets.qwerty@1234}}
-          DB_NAME: ${{ secrets.db1 }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
+          DB_NAME: ${{ secrets.DB_NAME }}
         run: |
           python pythonscript.py
